@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.search-results {
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 50;
+}

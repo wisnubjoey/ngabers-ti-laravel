@@ -1,0 +1,64 @@
+<form action="{{ route('posts.update', $post) }}" 
+                          method="POST" 
+                          enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">
+                                Judul
+                            </label>
+                            <input type="text" 
+                                   name="title" 
+                                   value="{{ old('title', $post->title) }}"
+                                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">
+                                Konten
+                            </label>
+                            <textarea name="content" 
+                                      rows="4" 
+                                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">{{ old('content', $post->content) }}</textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">
+                                Media Saat Ini
+                            </label>
+                            @if($post->media_path)
+                                @if(str_contains($post->media_type, 'image'))
+                                    <img src="{{ $post->media_path }}" 
+                                         class="max-w-md rounded mb-2">
+                                @else
+                                    <video controls class="max-w-md mb-2">
+                                        <source src="{{ $post->media_path }}" 
+                                                type="{{ $post->media_type }}">
+                                    </video>
+                                @endif
+                            @else
+                                <p class="text-gray-500">Tidak ada media</p>
+                            @endif
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">
+                                Upload Media Baru (Opsional)
+                            </label>
+                            <input type="file" 
+                                   name="media" 
+                                   accept="image/*,video/*"
+                                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            <p class="text-sm text-gray-500 mt-1">
+                                Biarkan kosong jika tidak ingin mengubah media
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-end">
+                            <button type="submit" 
+                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                Update Post
+                            </button>
+                        </div>
+                    </form>

@@ -1,0 +1,122 @@
+Beberapa ide pengembangan yang mungkin bisa ditambahkan:
+
+Fitur Post:
+
+
+Edit & Delete post
+Share post
+Save/Bookmark post
+Tag pengguna dalam post
+Kategori/Tag untuk post
+Rich text editor untuk konten
+
+
+Fitur Komunitas:
+
+
+Profile komunitas
+Jadwal event/touring
+Daftar anggota
+Gallery khusus komunitas
+Forum diskusi
+
+
+User Profile:
+
+
+Edit profile
+Profile picture
+Daftar motor yang dimiliki
+Riwayat touring
+Badge/Achievement
+
+
+Interaksi:
+
+
+Notifikasi
+Private message
+Reply komentar
+Emoji reactions
+Report post/comment
+
+
+Performa & UX:
+
+
+Infinite scroll
+Loading states
+Image/Video optimization
+Real-time update
+Search & Filter
+
+----------------------------------------------------------
+
+Beberapa ide fitur yang bisa ditambahkan:
+
+Edit post
+Reply comments SUCCESS DENGAN TAMBAHAN DELETE REPLY COMMENT
+Notifikasi (like/comment)
+User profile & settings
+Motor yang dimiliki user
+Event/jadwal touring
+Gallery khusus komunitas
+Search & filter posts
+Report post/comment
+
+
+Beberapa ide fitur berikutnya yang mungkin menarik:
+
+User Profile (foto profil, biodata motor)
+Event/Jadwal touring
+Gallery khusus komunitas
+Notifikasi (ketika dilike/dicomment)
+Search & Filter posts
+
+
+++========++
+INI PENTING UNTUK MENGINGAT IDE, TAMBAHKAN IDE RIDING TOURING YANG DIMANA USER DAPAT MEMBUAT EVENT MEREKA DI PAGE EVENT, LALU NANTI USER YANG CLICK ACCEPT ATAU IKUT RIRING NAMANYA ADA DI DALAM EVENT TERSEBUT...
+
+
+Mari kita list bagian-bagian yang perlu di-styling:
+
+Posts:
+
+Card post yang lebih menarik
+Layout media (image/video)
+Like & comment button yang lebih interaktif
+User info section (avatar, name, time)
+Spacing & padding yang lebih baik
+Transition/animation untuk like
+
+
+Navigation/Layout:
+
+Navbar yang lebih modern
+Search bar yang lebih menarik
+Dropdown menu yang lebih smooth
+Layout responsif untuk mobile
+
+
+Profile:
+
+Header profile yang lebih menarik
+Info motor yang lebih terorganisir
+Gallery posts yang lebih grid-style
+Avatar & cover photo
+
+
+Events:
+
+Card event yang lebih menarik
+Calendar/date display
+Status indicator
+Participant list
+Join button yang lebih interaktif
+
+
+Comments:
+
+Thread comments yang lebih baik
+Reply indentation
+User avatars di comments
